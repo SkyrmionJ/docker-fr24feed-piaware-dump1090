@@ -1,7 +1,3 @@
-[![Build Status](https://travis-ci.org/Thom-x/docker-fr24feed-piaware-dump1090.svg?branch=master)](https://travis-ci.org/Thom-x/docker-fr24feed-piaware-dump1090)
-![](https://images.microbadger.com/badges/image/thomx/fr24feed-piaware.svg)
-![](https://images.microbadger.com/badges/version/thomx/fr24feed-piaware.svg)
-
 # Fr24feed and FlightAware with dump1090 as a Docker image
 Docker image of Fr24feed, FlightAware and dump1090.
 
@@ -49,7 +45,7 @@ Download http://www.heywhatsthat.com/api/upintheair.json?id=XXXX&refraction=0.25
 
 Run : 
 ```
-docker run -d -p 8080:8080 -p 8754:8754 \
+docker run -d -p 9090:9090 -p 8754:8754 \
 --device=/dev/bus/usb:/dev/bus/usb \
 -v /path/to/your/upintheair.json:/usr/lib/fr24/public_html/upintheair.json \
 -v /path/to/your/piaware.conf:/etc/piaware.conf \
@@ -97,6 +93,6 @@ Download http://www.heywhatsthat.com/api/upintheair.json?id=XXXX&refraction=0.25
 Run : `docker-compose up`
 
 # Usage
-Go to http://dockerhost:8080 to view a map of reveived data.
+Go to http://dockerhost:9090 to view a map of reveived data.
 
 Go to http://dockerhost:8754 to view fr24feed configuration panel.

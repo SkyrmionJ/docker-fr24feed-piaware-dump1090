@@ -17,7 +17,7 @@ fr24feed-piaware:
     - "30005"
     - "30104"
     - "8754"
-    - "8080"
+    - "9090"
   devices:
     - "/dev/bus/usb"
   # ports
@@ -25,7 +25,7 @@ fr24feed-piaware:
   # 8080 - HTTP server port
   ports:
     - "8754:8754"
-    - "8080:8080"
+    - "9090:9090"
   logging:
     options:
       max-size: "30m"

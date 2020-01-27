@@ -55,6 +55,6 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
 RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
 
-EXPOSE 8754 8080 30001 30002 30003 30004 30005 30104 
+EXPOSE 8754 9090 30001 30002 30003 30004 30005 30104 
 
 CMD ["/usr/bin/supervisord"]
